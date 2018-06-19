@@ -3,6 +3,8 @@
  * Solved (7.134s - i7-4750HQ)
  */
 
+package com.rowantran.projecteuler;
+
 import java.util.ArrayList;
 import java.util.List;
 

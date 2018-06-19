@@ -3,6 +3,8 @@
  * Solved (0.002s - i7-4750HQ)
  */
 
+package com.rowantran.projecteuler;
+
 class Problem19 {
     final static int countSundays() {
         int day = 1;

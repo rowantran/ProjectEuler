@@ -8,7 +8,7 @@ package com.rowantran.projecteuler;
 import java.util.ArrayList;
 import java.util.List;
 
-class Problem23 {
+class Problem023 {
     private static Integer[] listDivisors(int n) {
         List<Integer> divisorList = new ArrayList<>();
 
@@ -62,6 +62,6 @@ class Problem23 {
     }
 
     public static void main(String[] args) {
-        Util.timeSolution(() -> nonAbundantSums());
+        Util.timeSolution(Problem023::nonAbundantSums);
     }
 }

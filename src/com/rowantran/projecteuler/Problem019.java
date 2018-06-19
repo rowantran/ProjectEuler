@@ -5,7 +5,7 @@
 
 package com.rowantran.projecteuler;
 
-class Problem19 {
+class Problem019 {
     private static int countSundays() {
         int day = 1;
         int month = 1;
@@ -61,6 +61,6 @@ class Problem19 {
     }
 
     public static void main(String[] args) {
-        Util.timeSolution(() -> countSundays());
+        Util.timeSolution(Problem019::countSundays);
     }
 }    

@@ -1,12 +1,12 @@
 /*
  * Problem 19 - Counting Sundays
- * Solved (0.002s - i7-4750HQ)
+ * Solved (0.002s - Ryzen 5 1600)
  */
 
 package com.rowantran.projecteuler;
 
 class Problem19 {
-    final static int countSundays() {
+    private static int countSundays() {
         int day = 1;
         int month = 1;
         int year = 1900;

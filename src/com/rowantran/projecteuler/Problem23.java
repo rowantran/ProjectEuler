@@ -1,6 +1,6 @@
 /*
  * Problem 23 - Non-abundant sums
- * Solved (7.134s - i7-4750HQ)
+ * Solved (6.867s - Ryzen 5 1600)
  */
 
 package com.rowantran.projecteuler;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Problem23 {
-    static Integer[] listDivisors(int n) {
+    private static Integer[] listDivisors(int n) {
         List<Integer> divisorList = new ArrayList<>();
 
         for (int i = 1; i <= Math.sqrt(n); i++) {
@@ -27,7 +27,7 @@ class Problem23 {
         return divisorArray;
     }
 
-    static boolean abundant(int n) {
+    private static boolean abundant(int n) {
         Integer[] divisors = listDivisors(n);
 
         int divisorSum = 0;
@@ -38,7 +38,7 @@ class Problem23 {
         return (divisorSum > n);
     }
 
-    static boolean canBeWrittenAsAbundantSum(int n) {
+    private static boolean canBeWrittenAsAbundantSum(int n) {
         for (int i = 12; i <= n/2; i++) {
             int j = n - i;
             if (abundant(i) && abundant(j)) {
@@ -49,7 +49,7 @@ class Problem23 {
         return false;
     }
 
-    static int nonAbundantSums() {
+    private static int nonAbundantSums() {
         int sum = 0;
 
         for (int i = 1; i <= 28123; i++) {

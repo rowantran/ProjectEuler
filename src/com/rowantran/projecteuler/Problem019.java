@@ -1,6 +1,6 @@
 /*
- * Problem 19 - Counting Sundays
- * Solved (0.002s - Ryzen 5 1600)
+Problem 19 - Counting Sundays
+Solved (2ms - Ryzen 5 1600)
  */
 
 package com.rowantran.projecteuler;

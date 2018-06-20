@@ -16,4 +16,17 @@ class Util {
             e.printStackTrace();
         }
     }
+
+    static void timeSolutionLong(Callable<Long> solution) {
+        final long startTime = System.currentTimeMillis();
+        try {
+            long solutionResult = solution.call();
+            final long endTime = System.currentTimeMillis();
+
+            System.out.println("Found solution in " + (endTime - startTime) + " ms");
+            System.out.println(solutionResult);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

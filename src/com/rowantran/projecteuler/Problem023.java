@@ -1,6 +1,6 @@
 /*
- * Problem 23 - Non-abundant sums
- * Solved (6.867s - Ryzen 5 1600)
+Problem 23 - Non-abundant sums
+Solved (6867s - Ryzen 5 1600)
  */
 
 package com.rowantran.projecteuler;

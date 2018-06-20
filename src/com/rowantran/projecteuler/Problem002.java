@@ -22,10 +22,12 @@ public class Problem002 {
         }
     }
 
-    private static int sumEvenFibonacciSequence(int max) {
+    private static int sumEvenFibonacciSequence() {
+        final int MAX_VALUE = 4000000;
+
         int sum = 0;
         int i = 0;
-        while (fibonacciSequence(i) <= max) {
+        while (fibonacciSequence(i) <= MAX_VALUE) {
             int term = fibonacciSequence(i);
             if (term % 2 == 0) {
                 sum += term;
@@ -38,6 +40,6 @@ public class Problem002 {
     }
 
     public static void main(String[] args) {
-        Util.timeSolution(() -> sumEvenFibonacciSequence(4000000));
+        Util.timeSolution(Problem002::sumEvenFibonacciSequence);
     }
 }

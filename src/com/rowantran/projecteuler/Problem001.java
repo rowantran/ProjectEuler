@@ -12,10 +12,12 @@ Solved - 233168
 package com.rowantran.projecteuler;
 
 public class Problem001 {
-    private static int multiplesThreeFive(int max) {
+    private static int multiplesThreeFive() {
+        final int MAX_MULTIPLE = 1000;
+
         int sum = 0;
 
-        for (int i = 0; i < max; i++) {
+        for (int i = 0; i < MAX_MULTIPLE; i++) {
             if (i % 3 == 0 || i % 5 == 0) {
                 sum += i;
             }
@@ -25,6 +27,6 @@ public class Problem001 {
     }
 
     public static void main(String[] args) {
-        Util.timeSolution(() -> multiplesThreeFive(1000));
+        Util.timeSolution(Problem001::multiplesThreeFive);
     }
 }

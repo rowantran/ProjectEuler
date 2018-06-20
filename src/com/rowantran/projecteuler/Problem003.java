@@ -42,13 +42,15 @@ public class Problem003 {
         return factors;
     }
 
-    private static long maxPrimeFactor(long n) {
-        List<Long> factors = listPrimeFactors(n);
+    private static long maxPrimeFactor() {
+        final long NUMBER = 600851475143L;
+
+        List<Long> factors = listPrimeFactors(NUMBER);
 
         return Collections.max(factors);
     }
 
     public static void main (String[] args) {
-        Util.timeSolutionLong(() -> maxPrimeFactor(600851475143L));
+        Util.timeSolutionLong(Problem003::maxPrimeFactor);
     }
 }

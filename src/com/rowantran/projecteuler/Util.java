@@ -1,6 +1,5 @@
 package com.rowantran.projecteuler;
 
-
 import java.util.concurrent.Callable;
 
 class Util {

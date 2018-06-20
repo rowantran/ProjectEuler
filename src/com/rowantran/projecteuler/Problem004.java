@@ -6,7 +6,7 @@ A palindromic number reads the same both ways. The largest palindrome made from 
 Find the largest palindrome made from the product of two 3-digit numbers.
 
 Solved - 906609
-(9ms - Ryzen 5 1600)
+(Ver. 1: 9ms - Ryzen 5 1600)
  */
 
 package com.rowantran.projecteuler;

@@ -6,7 +6,7 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 Find the sum of all the multiples of 3 or 5 below 1000.
 
 Solved - 233168
-(<1ms - Ryzen 5 1600)
+(Ver. 1: <1ms - Ryzen 5 1600)
  */
 
 package com.rowantran.projecteuler;
